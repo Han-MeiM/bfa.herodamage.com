@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import { I18nProvider } from '@lingui/react'
 import { graphql, navigate, StaticQuery } from 'gatsby'
 import { withStyles } from '@material-ui/core/styles'
-import * as i18nPluginHelper from '../../../plugins/gatsby-plugin-herodamage-i18n'
+import * as i18nPluginHelper from '../../../plugins/gatsby-plugin-herodamage-i18n/index'
 import { theme } from '../../../plugins/gatsby-plugin-herodamage-material-ui/getPageContext'
 import { getWowheadLink } from '../../utils/wow/ui'
 // Components
@@ -14,7 +14,7 @@ import Header from './header'
 import WowClassSelector from './wow-class-selector'
 import Main from './main'
 import Footer from './footer'
-import GPTAd from '../gpt-ad'
+import GPTAd from '../../components/gpt-ad'
 
 const styles = (theme) => ({
   layout: {
